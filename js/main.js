@@ -10,4 +10,29 @@ function toggleDropdown() {
       menu.style.display = 'none';
     }
   });
+
+
   
+  document.addEventListener("DOMContentLoaded", function () {
+  const mainImage = document.querySelector(".main-image");
+  const thumbnails = document.querySelectorAll(".thumb");
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      mainImage.src = thumb.src;
+    });
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mainImage = document.querySelector(".main-image");
+  const thumbnails = document.querySelectorAll(".thumb");
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      mainImage.src = thumb.src;
+    });
+  });
+});

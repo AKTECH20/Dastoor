@@ -1,4 +1,9 @@
+
+
+
 /* Reset & Base Styles */
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -239,4 +244,378 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+.site-header::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(to right, #f05a77, #f7cdd0);
+  width: 80%;
+  margin-top: 15px;
+  border-radius: 2px;
+}
 
+.site-footer {
+  background-color: #f7cdd0;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #e8bfc4;
+}
+
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 160px;              /* Increased from 60–70px */
+  width: 150px;                /* Maintains aspect ratio */
+  padding: 1px;              /* Space inside the logo box */
+  background-color: rgba(255, 255, 255, 0.8); /* Soft white background */
+  border-radius: 100%;         /* Rounded logo shape */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin: 0;
+  color: #333;
+}
+
+
+.lookbook-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.lookbook-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Keeps a consistent portrait ratio */
+  object-fit: cover;   /* Crops and fills the area neatly */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+
+.lookbook-gallery img:hover {
+  transform: scale(1.02);
+}
+@media (max-width: 600px) {
+  .lookbook-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.lookbook-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.lookbook-item {
+  text-align: center;
+}
+
+.lookbook-item img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.lookbook-item img:hover {
+  transform: scale(1.05);
+}
+
+.dress-description {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #f05a77;
+  font-size: 1em;
+}
+
+
+.product-detail {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #f05a77;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.product-specs {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  color: #444;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+.product-specs li {
+  margin-bottom: 10px;
+}
+
+
+
+/*///////////*/
+.product-detail-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #f05a77;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  background-color: #f05a77;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e14a67;
+}
+.product-detail {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.product-gallery {
+  flex: 1 1 400px;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+/* Product Detail Page */
+.product-detail {
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-gallery {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.thumbnail-row {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 80px;
+  height: 106px; /* same 3:4 ratio */
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.thumb:hover {
+  border-color: #f05a77;
+}
+
+.product-info {
+  flex: 1 1 400px;
+  padding-top: 10px;
+}
+
+.product-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #f05a77;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info p,
+.product-info li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.buy-button {
+  background-color: #f05a77;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #e0486d;
+}
+
+.product-info {
+  text-align: left;
+}
+
+.product-info .description {
+  margin-bottom: 20px;
+  font-size: 1.05em;
+  color: #444;
+}
+
+.product-specs p {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #555;
+}

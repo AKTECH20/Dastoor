@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dress 1 - Dastoor</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    
+    <h1 class="brand-title">Dastoor by Khalida Khan</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lookbook.html" class="active">Lookbook</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown()">Categories ▾</button>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Lehengas</a>
+        <a href="#">Shararas</a>
+        <a href="#">Maxi Dresses</a>
+        <a href="#">Fusion Gowns</a>
+      </div>
+    </div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Product Detail Section -->
+  <section class="product-detail">
+    <div class="product-container">
+      <!-- Gallery -->
+      <div class="product-gallery">
+        <img src="images/img1.jpg" alt="Dress 1" class="main-image" id="mainImage">
+        <div class="thumbnail-row">
+          <img src="images/img1.jpg" alt="View 1" class="thumb">
+          <img src="images/img1-1.jpg" alt="View 2" class="thumb">
+          <img src="images/img1-2.jpg" alt="View 3" class="thumb">
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="product-info">
+        <h2>Rose Blush Embroidered Gown</h2>
+        <p class="price">₹8,999</p>
+        <p class="description">
+          Crafted in delicate chiffon with floral threadwork, this gown blends elegance with comfort. Perfect for weddings, festivals, or formal evenings.
+        </p>
+        <div class="product-specs">
+          <p><strong>Fabric:</strong> Georgette with satin lining</p>
+          <p><strong>Color:</strong> Blush Pink</p>
+          <p><strong>Sizes Available:</strong> S, M, L, XL</p>
+          <p><strong>Includes:</strong> Matching dupatta</p>
+        </div>
+        <button class="buy-button">Contact to Order</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    &copy; 2025 Dastoor by Khalida Khan
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
